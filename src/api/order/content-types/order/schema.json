@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "payment_id": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "string"
+    },
+    "payment": {
+      "type": "json"
+    }
+  }
+}
